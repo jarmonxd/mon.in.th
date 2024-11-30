@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarmon Website</title>
+    <meta name="description" content="(เก็บภาพ)
+    เว็บเก็บภาพ ของ jarmon เว็บกากๆง่อยๆใช้เทมเพลตทํา บัคเยอะ + รูปโหลดช้า" />
+    <meta itemprop="name" content="Jarmon Website" />
+    <meta itemprop="description" content="(เก็บภาพ)
+    เว็บเก็บภาพ ของ jarmon เว็บกากๆง่อยๆใช้เทมเพลตทํา บัคเยอะ + รูปโหลดช้า" />
+    <meta itemprop="image" content="https://p.mon.in.th/secure-storage/66e724150f7e0.png" />
+    <meta property="og:url" content="https://mon.in.th/i/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jarmon Website" />
+    <meta property="og:description" content="(เก็บภาพ)
+    เว็บเก็บภาพ ของ jarmon เว็บกากๆง่อยๆใช้เทมเพลตทํา บัคเยอะ + รูปโหลดช้า" />
+    <meta property="og:image" content="https://p.mon.in.th/secure-storage/66e724150f7e0.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jarmon Website" />
+    <meta name="twitter:description" content="(เก็บภาพ)
+    เว็บเก็บภาพ ของ jarmon เว็บกากๆง่อยๆใช้เทมเพลตทํา บัคเยอะ + รูปโหลดช้า" />
+    <meta name="twitter:image" content="https://p.mon.in.th/secure-storage/66e724150f7e0.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link href="https://kit-pro.fontawesome.com/releases/v6.6.0/css/pro.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles2.css">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XX7X0LHKPV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XX7X0LHKPV');
+</script>
+<script type="text/javascript">
+    var _iub = _iub || [];
+    _iub.csConfiguration = {"siteId":3849737,"cookiePolicyId":14769187,"lang":"en","storage":{"useSiteId":true}};
+    </script>
+    <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3849737.js"></script>
+    <script type="text/javascript" src="//cdn.iubenda.com/cs/tcf/stub-v2.js"></script>
+    <script type="text/javascript" src="//cdn.iubenda.com/cs/tcf/safe-tcf-v2.js"></script>
+    <script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></script>
+    <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+    <style>
+        .image-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 75%;
+            overflow: hidden;
+            background-color: #f0f0f0; 
+        }
+
+        .image-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+            z-index: 1;
+        }
+
+        @keyframes spin {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+        .image-container.loaded .loader {
+            display: none;
+        }
+
+        .image-container.loaded img {
+            opacity: 1;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* เพิ่มสไตล์สำหรับแท็บ */
+        .tabs.is-toggle.is-toggle-rounded ul li a {
+            cursor: pointer;
+        }
+
+        /* ปรับแต่งโมดอลให้แสดงภาพเต็ม */
+        .modal-content {
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .modal-content img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+    <nav class="navbar is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <strong>Jarmon Website</strong>
+            </a>
+                   <a class="navbar-item" href="https://webring.wonderful.software#mon.in.th" title="วงแหวนเว็บ"><img alt="วงแหวนเว็บ" width="32" height="32" src="https://webring.wonderful.software/webring.svg"/></a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+            
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-end">
+                <a href="/pic/" class="navbar-item">
+                    <i class="fa-solid fa-image-landscape"></i> บริการฝากรูป
+                </a>
+                <a href="/r/" class="navbar-item">
+                    <i class="fa-sharp-duotone fa-regular fa-link-simple"></i> บริการย่อลิ้ง
+                </a>
+                <a href="/a/" class="navbar-item">
+                    <i class="fas fa-info-circle"> </i> ข้อมูลส่วนตัว
+                </a>
+                <a href="/p/" class="navbar-item">
+                    <i class="fas fa-briefcase"></i> ผลงาน
+                </a>
+                <a href="/i/" class="navbar-item">
+                    <i class="fas fa-images"></i> รูปภาพ
+                </a>
+                <a href="/contact/" class="navbar-item">
+                    <i class="fas fa-envelope"></i> ติดต่อฉัน
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Section -->
+    <section class="section" style="padding-top: 80px;">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb is-small" aria-label="breadcrumbs">
+                <ul>
+                    <li><a href="/">mon.in.th</a></li>
+                    <li class="is-active"><a href="/i/" aria-current="page">i</a></li>
+                </ul>
+            </nav>
+
+            <!-- Tabs -->
+            <div class="tabs is-centered is-boxed">
+                <ul>
+                    <li class="is-active" data-tab="certificates">
+                        <a>
+                            <span class="icon is-small"><i class="fas fa-image"></i></span>
+                            <span>เกียรติบัตร</span>
+                        </a>
+                    </li>
+                    <li data-tab="other-images">
+                        <a>
+                            <span class="icon is-small"><i class="fa-solid fa-camera-retro"></i></span>
+                            <span>ภาพอื่นๆ</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- ส่วนเกียรติบัตร -->
+            <section id="certificates" class="section">
+                <h2 class="title has-text-centered">เกียรติบัตร</h2>
+                <div class="columns is-multiline">
+                    <!-- ตัวอย่างภาพเกียรติบัตร -->
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/01.jpg" alt="เกียรติบัตร 1" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/02.jpg" alt="เกียรติบัตร 2" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/03.jpg" alt="เกียรติบัตร 3" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/04.PNG" alt="เกียรติบัตร 4" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="500">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/05.JPG" alt="เกียรติบัตร 5" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/06.jpg" alt="เกียรติบัตร 6" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="700">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/07.jpg" alt="เกียรติบัตร 7" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="800">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/015.jpg" alt="เกียรติบัตร 8" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="900">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/016.jpg" alt="เกียรติบัตร 9" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="1000">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/012.jpg" alt="เกียรติบัตร 10" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="1100">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/013.jpg" alt="เกียรติบัตร 11" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="1200">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/014.jpg" alt="เกียรติบัตร 12" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="1300">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/08.jpg" alt="เกียรติบัตร 13" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="1400">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/09.jpg" alt="เกียรติบัตร 14" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="1500">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/010.jpg" alt="เกียรติบัตร 15" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="1600">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/011.jpg" alt="เกียรติบัตร 16" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ส่วนภาพอื่นๆ -->
+            <section id="other-images" class="section" style="display: none;">
+                <h2 class="title has-text-centered">ภาพอื่นๆ</h2>
+                <div class="columns is-multiline">
+                    <!-- ตัวอย่างภาพอื่นๆ -->
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/1.jpg" alt="ภาพอื่นๆ 1" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/2.JPG" alt="ภาพอื่นๆ 2" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/3.JPG" alt="ภาพอื่นๆ 3" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/4.JPG" alt="ภาพอื่นๆ 4" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/5.JPG" alt="ภาพอื่นๆ 5" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/6.JPG" alt="ภาพอื่นๆ 6" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/7.JPG" alt="ภาพอื่นๆ 7" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/8.JPG" alt="ภาพอื่นๆ 8" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/9.JPG" alt="ภาพอื่นๆ 9" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/10.JPG" alt="ภาพอื่นๆ 10" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/11.JPG" alt="ภาพอื่นๆ 11" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/12.JPG" alt="ภาพอื่นๆ 12" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/13.JPG" alt="ภาพอื่นๆ 13" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/14.JPG" alt="ภาพอื่นๆ 14" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/15.JPG" alt="ภาพอื่นๆ 15" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/16.JPG" alt="ภาพอื่นๆ 16" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/17.JPG" alt="ภาพอื่นๆ 17" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/18.JPG" alt="ภาพอื่นๆ 18" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                   <div class="column is-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/19.JPG" alt="ภาพอื่นๆ 19" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/20.JPG" alt="ภาพอื่นๆ 20" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/21.JPG" alt="ภาพอื่นๆ 21" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/22.JPG" alt="ภาพอื่นๆ 22" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/23.JPG" alt="ภาพอื่นๆ 23" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <div class="column is-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="image-container">
+                            <div class="loader"></div>
+                            <img data-src="https://imagesbymon.st-th-1.byteark.com/impressive/24.JPG" alt="ภาพอื่นๆ 24" loading="lazy" onclick="openModal(this.src, this.alt)">
+                        </div>
+                    </div>
+                    <!-- เพิ่มภาพตรงนี้ -->
+                </div>
+                <div class="content has-text-centered">
+                    <span class="tag is-link is-light">
+                        <a href="https://drive.google.com/drive/folders/1L3gSlz9uhXhJWnWN1HPi6BN9CVdcGeNN?usp=sharing" class="button is-link" target="_blank">
+                            <span class="icon">
+                                <i class="fa-light fa-image"></i>
+                            </span>
+                            <span>ภาพอื่นๆ</span>
+                        </a>
+                    </span>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Modal สำหรับแสดงภาพเต็ม -->
+    <div id="imageModal" class="modal">
+        <div class="modal-background" onclick="closeModal()"></div>
+        <div class="modal-content">
+            <figure class="image">
+                <img id="modalImage" src="" alt="">
+            </figure>
+        </div>
+        <button class="modal-close is-large" aria-label="close" onclick="closeModal()"></button>
+    </div>
+
+    <!-- ส่วนล่างสุดของหน้า -->
+    <div class="content has-text-centered" style="padding: 20px;">
+        <span class="tag is-link is-light">
+            <p>Copyright &copy; 2024 
+                <a href="https://web.facebook.com/thanapat.inti" target="_blank" style="color: #00aaff; text-decoration: none;">
+                    Jarmonxd
+                </a>. All Rights Reserved.
+            </p>
+        </span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // เริ่มต้น AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // การจัดการกับ Navbar Burger
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            if ($navbarBurgers.length > 0) {
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+
+            // การสลับแท็บ
+            const tabs = document.querySelectorAll('.tabs ul li');
+            const sections = {
+                certificates: document.getElementById('certificates'),
+                'other-images': document.getElementById('other-images')
+            };
+
+            // Flags เพื่อตรวจสอบว่าแต่ละแท็บโหลดรูปภาพแล้วหรือยัง
+            const loadedTabs = {
+                certificates: false,
+                'other-images': false
+            };
+
+            // ฟังก์ชั่นสำหรับโหลดรูปภาพอย่างต่อเนื่อง
+            function loadImageSequentially(containerList, callback) {
+                function loadNext(index) {
+                    if (index >= containerList.length) {
+                        if (callback) callback();
+                        return;
+                    }
+
+                    const container = containerList[index];
+                    const img = container.querySelector('img');
+                    const loader = container.querySelector('.loader');
+
+                    img.addEventListener('load', () => {
+                        loader.style.display = 'none';
+                        container.classList.add('loaded'); 
+                        loadNext(index + 1);
+                    });
+
+                    img.addEventListener('error', () => {
+                        loader.style.display = 'none';
+                        img.alt = 'ไม่สามารถโหลดภาพได้';
+                        loadNext(index + 1); 
+                    });
+
+                    img.src = img.getAttribute('data-src'); 
+                }
+
+                loadNext(0);
+            }
+
+            // โหลดรูปภาพสำหรับแท็บที่เปิดอยู่ตอนแรก (certificates)
+            const activeTab = document.querySelector('.tabs ul li.is-active').getAttribute('data-tab');
+            loadImageSequentially(Array.from(sections[activeTab].querySelectorAll('.image-container')), () => {
+                loadedTabs[activeTab] = true;
+            });
+
+            // การจัดการการคลิกแท็บ
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // ถ้าแท็บที่คลิกอยู่แล้ว ไม่ต้องทำอะไร
+                    if (tab.classList.contains('is-active')) return;
+
+                    // ลบคลาส 'is-active' จากทุกแท็บและเพิ่มให้กับแท็บที่ถูกคลิก
+                    tabs.forEach(t => t.classList.remove('is-active'));
+                    tab.classList.add('is-active');
+
+                    // ซ่อนทุกส่วนของเนื้อหา
+                    Object.values(sections).forEach(section => {
+                        section.style.display = 'none';
+                    });
+
+                    // แสดงส่วนของเนื้อหาที่เกี่ยวข้องกับแท็บที่ถูกคลิก
+                    const selectedTab = tab.getAttribute('data-tab');
+                    sections[selectedTab].style.display = 'block';
+
+                    // เลื่อนหน้าจอไปยังส่วนเนื้อหาที่แสดง
+                    sections[selectedTab].scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+                    // ถ้ายังไม่ได้โหลดรูปภาพในแท็บนี้ ให้โหลดรูปภาพ
+                    if (!loadedTabs[selectedTab]) {
+                        const imageContainers = Array.from(sections[selectedTab].querySelectorAll('.image-container'));
+                        loadImageSequentially(imageContainers, () => {
+                            loadedTabs[selectedTab] = true;
+                        });
+                    }
+                });
+            });
+        });
+
+        // ฟังก์ชั่นสำหรับเปิดโมดอล
+        function openModal(src, alt) {
+            const modalImage = document.getElementById('modalImage');
+            modalImage.src = src;
+            modalImage.alt = alt;
+            document.getElementById('imageModal').classList.add('is-active');
+        }
+
+        // ฟังก์ชั่นสำหรับปิดโมดอล
+        function closeModal() {
+            document.getElementById('imageModal').classList.remove('is-active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarmon Website</title>
+    <meta name="description" content="404 ลิ้งผิดหรือปล่าว?" />
+
+    <meta itemprop="name" content="Jarmon Website" />
+    <meta itemprop="description" content="404 ลิ้งผิดหรือปล่าว?" />
+    <meta itemprop="image" content="https://cdn.mon.in.th/i/3e.jpg" />
+
+    <meta property="og:url" content="https://mon.in.th/contact/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jarmon Website" />
+    <meta property="og:description" content="404 ลิ้งผิดหรือปล่าว?" />
+    <meta property="og:image" content="https://cdn.mon.in.th/i/3e.jpg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jarmon Website" />
+    <meta name="twitter:description" content="404 ลิ้งผิดหรือปล่าว?" />
+    <meta name="twitter:image" content="https://cdn.mon.in.th/i/3e.jpg" />
+    
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- Font Awesome Pro -->
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.7.1/css/pro.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://mon.in.th/contact/styles.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XX7X0LHKPV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XX7X0LHKPV');
+</script>
+
+<script type="text/javascript">
+    var _iub = _iub || [];
+    _iub.csConfiguration = {"siteId":3849737,"cookiePolicyId":14769187,"lang":"en","storage":{"useSiteId":true}};
+    </script>
+    <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3849737.js"></script>
+    <script type="text/javascript" src="//cdn.iubenda.com/cs/tcf/stub-v2.js"></script>
+    <script type="text/javascript" src="//cdn.iubenda.com/cs/tcf/safe-tcf-v2.js"></script>
+    <script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></script>
+    <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+</head>
+
+<body class="min-h-screen flex flex-col">
+
+    <!-- แท๊ปด้านบน -->
+    <nav class="navbar bg-base-100 animate__animated animate__fadeInDown navbar-custom">
+        <div class="navbar-start">
+            <!-- โทรศัพท์ -->
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </label>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 animate__animated animate__fadeIn">
+                    <li><a href="/a/"><i class="fa-regular fa-circle-info"></i> ข้อมูลส่วนตัว</a></li>
+                    <li><a href="/p/"><i class="fa-regular fa-briefcase"></i> ผลงาน</a></li>
+                    <li><a href="/i/"><i class="fa-regular fa-images"></i> รูปภาพ</a></li>
+                    <li><a href="/contact/"><i class="fa-regular fa-address-card"></i> ติดต่อฉัน</a></li>
+                </ul>
+            </div>
+            <a class="btn btn-ghost text-xl flex items-center gap-2 normal-case" href="/">Jarmon Website</a>
+            <a class="btn btn-ghost text-xl normal-case" href="https://webring.wonderful.software#mon.in.th" title="วงแหวนเว็บ">
+                <img alt="วงแหวนเว็บ" width="32" height="32" src="https://webring.wonderful.software/webring.svg"/>
+            </a>
+        </div>
+        <!-- คอม -->
+        <div class="navbar-end hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="/pic/" class="normal-case"><i class="fa-regular fa-image-landscape"></i> บริการฝากรูป</a></li>
+                <li><a href="/r/" class="normal-case"><i class="fa-sharp-duotone fa-regular fa-link-simple"></i> บริการย่อลิ้ง</a></li>
+                <li><a href="/a/" class="normal-case"><i class="fa-regular fa-circle-info"></i> ข้อมูลส่วนตัว</a></li>
+                <li><a href="/p/" class="normal-case"><i class="fa-regular fa-briefcase"></i> ผลงาน</a></li>
+                <li><a href="/i/" class="normal-case"><i class="fa-regular fa-images"></i> รูปภาพ</a></li>
+                <li><a href="/contact/" class="normal-case"><i class="fa-regular fa-address-card"></i> ติดต่อฉัน</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="breadcrumbs">
+        <ul>
+            <li>
+                <a href="/" class="flex items-center normal-case">
+                    <i class="fa-regular fa-home breadcrumb-icon"></i> mon.in.th
+                </a>
+            </li>
+            <li>
+                <a href="/" class="flex items-center normal-case">
+                    <i class="fa-regular fa-bug"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <main class="flex-grow p-4 sm:p-6">
+        <div class="text-center">
+            <h1 class="mb-4 animate__animated animate__fadeInDown">404</h1>
+            <p class="text-base sm:text-lg mb-6 animate__animated animate__fadeInUp">
+                อ่าวมาทําไมหรอกดลิ้งผิดหรือไง สามารถติดต่อผู้พัฒนาได้ตามข้อมูลด้านล่าง
+            </p>
+        </div>
+        <div class="flex flex-wrap gap-4 justify-center items-center max-w-md sm:max-w-lg lg:max-w-xl mx-auto">
+            <!-- <a href="https://www.facebook.com/thanapat.inti" target="_blank"
+                class="contact-item btn btn-outline btn-info flex items-center gap-2 normal-case">
+                <i class="fab fa-facebook"></i> Facebook
+            </a> -->
+
+            <div class="dropdown dropdown-bottom">
+                <label tabindex="0" class="btn btn-outline btn-info flex items-center gap-2 normal-case">
+                    <i class="fa-regular fa-globe"></i> Facebook
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7" />
+                    </svg>
+                </label>
+                <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="https://www.facebook.com/thanapat.inti/" target="_blank"><i class="fa-regular fa-sparkles"></i> Main account</a></li>
+                    <li><a href="https://www.facebook.com/่jarmonxd/" target="_blank"><i class="fa-regular fa-cloud"></i> Backup account</a></li>
+                </ul>
+            </div>
+            <!-- <a href="https://www.youtube.com/@jarmonxd" target="_blank"
+                class="contact-item btn btn-outline btn-error flex items-center gap-2 normal-case">
+                <i class="fab fa-youtube"></i> YouTube
+            </a> -->
+
+
+
+            <a href="https://www.instagram.com/jarmonxd/" target="_blank"
+                class="contact-item btn btn-outline btn-secondary flex items-center gap-2 normal-case">
+                <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+            <a href="mailto:admin@mon.in.th"
+                class="contact-item btn btn-outline btn-warning flex items-center gap-2 normal-case">
+                <i class="fa-regular fa-envelope"></i> Gmail
+            </a>
+            <!-- Add Website Category -->
+            <!-- <div class="dropdown dropdown-bottom">
+                <label tabindex="0" class="btn btn-outline btn-success flex items-center gap-2 normal-case">
+                    <i class="fa-regular fa-globe"></i> Website
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7" />
+                    </svg>
+                </label>
+                <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="https://website1.com" target="_blank">Website 1</a></li>
+                    <li><a href="https://website2.com" target="_blank">Website 2</a></li>
+                    <li><a href="https://website3.com" target="_blank">Website 3</a></li>
+                    <li><a href="https://website4.com" target="_blank">Website 4</a></li>
+                    <li><a href="https://website5.com" target="_blank">Website 5</a></li>
+                </ul> -->
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="box-border md:box-content bg-green-50 text-green-700 ring-1 ring-inset ring-green-600/20">
+        <div class="container mx-auto py-4 px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <p class="text-xs font-medium mb-2 md:mb-0 inline-flex items-center rounded-md bg-green-50 px-2 py-1">
+                    Copyright &copy; 2024 <a style="margin-right: 0.25rem"> </a><a href="https://mon.in.th/" target="_blank" class="hover:underline"> Jarmonxd</a>.
+                    All Rights Reserved.
+                </p>
+                <div class="flex space-x-4 mt-2 md:mt-0">
+                    <a href="https://www.facebook.com/thanapat.inti" target="_blank" class="text-green-700 hover:text-green-900">
+                        <i class="fa-regular fa-globe"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
